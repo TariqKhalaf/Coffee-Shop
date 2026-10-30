@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Coffee Shop Website" />
+    <meta name="author" content="Tariq Khalaf" />
+    <meta name="keywords" content="Coffee, Shop, Cafe, Drinks" />
+    <title>Coffee Shop</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-dark-custom navbar-dark fs-4 p-4"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#home">الرئيسية</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#about">من نحن</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#menu">القائمة</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#reviews">الآراء</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#contact">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="navbar-brand fs-2 fw-bold text-main float-start" href="#">
+          <i class="fa-solid fa-mug-hot me-2"></i> Coffee Shop
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section
+      id="home"
+      class="hero-section min-vh-100 d-flex align-items-center justify-content-center py-5"
+    >
+      <div
+        class="container text-center h-50 d-flex flex-column align-items-center justify-content-around"
+      >
+        <h1
+          class="display-2 display-md-2 display-lg-1 fw-bold text-main mb-3 mb-md-4"
+        >
+          ابدأ يومك بفنجان قهوة مثالي
+        </h1>
+
+        <p
+          class="lead text-light text-center fs-2 fs-md-4 fs-lg-3 mb-4 mb-md-5"
+        >
+          نصنع لك لحظة استثنائية تبدأ مع أول رشفة لتوقظ حواسك. ننتقي محاصيلنا
+          بعناية من أفضل المزارع العالمية لنقدم لك المذاق الغني الذي تستحقه.
+        </p>
+
+        <a href="#menu" class="btn btn-main btn-lg px-4 py-2 fs-5 fs-md-4"
+          >اطلب الآن</a
+        >
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2 class="title display-md-3 display-2 fw-bold text-main mb-5">
+          من نحن
+        </h2>
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+              alt="About Us"
+              class="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="display-md-4 display-3 fw-bold text-main mb-3">
+              لماذا تختار مقهانا؟
+            </h2>
+            <p class="text-secondary text-center fs-4">
+              نحن نهتم بكل تفاصيل تحضير القهوة، بدءاً من اختيار أفضل الحبوب
+              العالمية وحتى تقديمها بأسلوب متميز يناسب ذوقك الرفيع.
+            </p>
+            <ul class="list-unstyled text-end fs-4">
+              <li class="mb-2">
+                <i class="fa-solid fa-check text-main me-2"></i> حبوب قهوة طازجة
+                ومختارة بعناية.
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-check text-main me-2"></i> جودة عالية وطعم
+                لا يُنسى.
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-check text-main me-2"></i> أجواء هادئة
+                ومريحة.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Mene Section Start  -->
+    <section id="menu" class="py-5 bg-darker">
+      <div class="container text-center">
+        <h2 class="title display-md-3 display-2 fw-bold text-main mb-5">
+          قائمة القهوة
+        </h2>
+        <!-- Menu Section Start -->
+
+        <div class="row g-4">
+          <!-- Item 1 -->
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3 d-flex flex-column justify-content-between">
+              <img
+                src="./assets/imgs/coffee_1.png"
+                class="card-img-top rounded"
+                alt="Espresso"
+              />
+              <div class="card-body align-self-center">
+                <h5 class="card-title text-main fs-1 fw-bold">إسبراسو</h5>
+                <p class="card-text text-secondary fs-4">
+                  قهوة مركزة وغنية بالنكهة الفاخرة.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fs-4 fw-bold text-main ">15 $</span>
+                  <button class="btn btn-main btn-md">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3 d-flex flex-column justify-content-between">
+              <img
+                src="./assets/imgs/coffee_2.png"
+                class="card-img-top rounded"
+                alt="Espresso"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-main fs-1 fw-bold">إسبراسو</h5>
+                <p class="card-text text-secondary fs-4">
+                  قهوة مركزة وغنية بالنكهة الفاخرة.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fs-4 fw-bold text-main ">15 $</span>
+                  <button class="btn btn-main btn-md">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3 d-flex flex-column justify-content-between">
+              <img
+                src="./assets/imgs/coffee_3.png"
+                class="card-img-top rounded"
+                alt="Espresso"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-main fs-1 fw-bold">إسبراسو</h5>
+                <p class="card-text text-secondary fs-4">
+                  قهوة مركزة وغنية بالنكهة الفاخرة.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fs-4 fw-bold text-main ">15 $</span>
+                  <button class="btn btn-main btn-md">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3 d-flex flex-column justify-content-between">
+              <img
+                src="./assets/imgs/coffee_4.png"
+                class="card-img-top rounded"
+                alt="Espresso"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-main fs-1 fw-bold">إسبراسو</h5>
+                <p class="card-text text-secondary fs-4">
+                  قهوة مركزة وغنية بالنكهة الفاخرة.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fs-4 fw-bold text-main ">15 $</span>
+                  <button class="btn btn-main btn-md">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3 d-flex flex-column justify-content-between">
+              <img
+                src="./assets/imgs/coffee_1.png"
+                class="card-img-top rounded"
+                alt="Espresso"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-main fs-1 fw-bold">إسبراسو</h5>
+                <p class="card-text text-secondary fs-4">
+                  قهوة مركزة وغنية بالنكهة الفاخرة.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fs-4 fw-bold text-main ">15 $</span>
+                  <button class="btn btn-main btn-md">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3 d-flex flex-column justify-content-between">
+              <img
+                src="./assets/imgs/coffee_2.png"
+                class="card-img-top rounded"
+                alt="Espresso"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-main fs-1 fw-bold">إسبراسو</h5>
+                <p class="card-text text-secondary fs-4">
+                  قهوة مركزة وغنية بالنكهة الفاخرة.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fs-4 fw-bold text-main ">15 $</span>
+                  <button class="btn btn-main btn-md">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- Reviews Section Start -->
+    <section id="reviews" class="py-5">
+      <div class="container text-center">
+        <h2 class="title display-md-3 display-2 fw-bold text-main mb-5">
+          آراء العملاء
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 card-custom h-100 rounded d-flex flex-column">
+              <i class="fa-solid fa-quote-left fs-1 text-main mb-4"></i>
+              <p class="text-white fs-4 flex-grow-1">
+                أفضل مكان لتناول القهوة في المدينة، الخدمة ممتازة والطعم خيالي!
+              </p>
+              <h6 class="text-main fs-4 mb-0">- أحمد علي</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 card-custom rounded d-flex flex-column">
+              <i class="fa-solid fa-quote-left fs-1 text-main mb-4"></i>
+              <p class="text-white fs-4 flex-grow-1">
+                الأجواء رائعة جداً ومناسبة للعمل أو الاسترخاء مع فنجان قهوة.
+              </p>
+              <h6 class="text-main fs-4 mb-0">- سارة محمد</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 card-custom rounded d-flex flex-column">
+              <i class="fa-solid fa-quote-left fs-1 text-main mb-4"></i>
+              <p class="text-white fs-4 flex-grow-1">
+                الكابوتشينو عندهم مميز جداً، أنصح الجميع بتجربته.
+              </p>
+              <h6 class="text-main fs-4 mb-0">- خالد محمود</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="py-5 bg-darker">
+      <div class="container text-center">
+        <h2 class="title display-md-3 display-2 fw-bold text-main mb-5">
+          تواصل معنا
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form id="contactForm">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-custom p-3"
+                  placeholder="الاسم الكامل"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-custom p-3"
+                  placeholder="البريد الإلكتروني"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control form-custom p-3"
+                  rows="5"
+                  placeholder="رسالتك"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-main p-2 w-100">
+                إرسال الرسالة
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="py-4 text-center text-secondary border-top border-secondary">
+      <div class="container">
+        <p class="mb-0">
+          جميع الحقوق محفوظة &copy; 2026 Coffee Shop | تصميم Tariq Khalaf
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
